@@ -33,7 +33,7 @@ function increaseSafety(team) {
   draw()
 }
 
-function total1() {
+function total1(team) {
   team1 = safetyScore1 + teamScore1
   draw()
   console.log(team1)
