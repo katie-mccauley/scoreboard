@@ -4,6 +4,7 @@ let touchScore1 = 0
 let touchScore2 = 0
 let safetyScore1 = 0
 let safetyScore2 = 0
+let team1 = 0
 
 function increaseScore(team) {
   if (team == 'team1') {
@@ -32,6 +33,12 @@ function increaseSafety(team) {
   draw()
 }
 
+function total1() {
+  team1 = safetyScore1 + teamScore1
+  draw()
+  console.log(team1)
+}
+
 function draw() {
   document.getElementById('team1').innerText = teamScore1
   document.getElementById('team2').innerText = teamScore2
@@ -39,6 +46,7 @@ function draw() {
   document.getElementById('touch2').innerText = touchScore2
   document.getElementById('safety1').innerText = safetyScore1
   document.getElementById('saftey2').innerText = safetyScore2
+  document.getElementById('total1').innerText = team1
 }
 
 
