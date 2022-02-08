@@ -36,35 +36,51 @@
   </header>
   <main class="container-fluid">
     <div class="row">
-      <div class="col-6">
-        <h2 class="">
-          Team 1 has <span id="team1">0</span> pointers
-        </h2>
-        <h2>
-          Team 1 has <span id="touch1">0</span> touchdowns
-        </h2>
-        <button onclick="increaseScore('team1')">
-          Pointer
-        </button>
+      <div class="col-6 bg-warning d-flex justify-content-center text-center">
+        <div class="">
+          <h1>Team 1</h1>
+          <h2 class="">
+            <span id="team1">0</span> pointers
+          </h2>
+          <h2>
+            <span id="touch1">0</span> touchdowns
+          </h2>
+          <h2>
+            <span id="safety1">0</span> safety points
+          </h2>
+          <button onclick="increaseScore('team1')">
+            Pointer
+          </button>
 
-        <button onclick="touchDown('team1')">
-          Touchdown
-        </button>
+          <button onclick="touchDown('team1')">
+            Touchdown
+          </button>
+          <button onclick="increaseSafety('team1')">Safety</button>
+        </div>
       </div>
 
-      <div class="col-6 ">
-        <h2>
-          Team 2 has <span id="team2">0</span> pointers
-        </h2>
-        <h2>
-          Team 2 has <span id="touch2">0</span> touchdowns
-        </h2>
-        <button onclick="increaseScore('team2')">
-          Pointer
-        </button>
-        <button onclick="touchDown('team2')">
-          Touchdown
-        </button>
+      <div class="col-6 d-flex justify-content-center text-center bg-secondary">
+        <div class="">
+          <h1>
+            Team 2
+          </h1>
+          <h2>
+            <span id="team2">0</span> pointers
+          </h2>
+          <h2>
+            <span id="touch2">0</span> touchdowns
+          </h2>
+          <h2>
+            <span id="saftey2">0</span> safety points
+          </h2>
+          <button onclick="touchDown('team2')">
+            Touchdown
+          </button>
+          <button onclick="increaseScore('team2')">
+            Pointer
+          </button>
+          <button onclick="increaseSafety('team2')">Safety</button>
+        </div>
       </div>
     </div>
     <div class="row">
